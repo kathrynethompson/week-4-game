@@ -27,3 +27,7 @@ h1{
 .aeons{
 	margin:10px;
 }
+
+#audio{
+	display: hidden;
+}

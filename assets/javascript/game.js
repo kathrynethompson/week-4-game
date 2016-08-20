@@ -7,11 +7,12 @@ $(document).ready(function() {
 
     var wins = 0;
     var losses = 0;
-    var playerScore = 0;
+    
 
-
-    var compChoice = Math.floor(Math.random() * 101) + 19;
-
+        var playerScore = 0;
+        var compChoice = Math.floor(Math.random() * 101) + 19;
+    
+    
 
     console.log(compChoice);
 
@@ -30,18 +31,23 @@ $(document).ready(function() {
         console.log(playerScore);
 
         if (playerScore === compChoice) {
-        alert('You won!');
-        wins++
-    } else if (playerScore > compChoice) {
-        alert('You lost!');
-        losses++
-        console.log(losses);
-    }
+            alert('You won!');
+            wins++
+            
+            
 
-    $('.wins').html(wins);
-    $('.losses').html(losses);
+        } else if (playerScore > compChoice) {
+            alert('You lost!');
+            losses++
+            
+            
+        }
+
+        $('.wins').html(wins);
+        $('.losses').html(losses);
 
     });
+
     $("#ifrit").on("click", function() {
         $(ifritNumber).appendTo().on("click", "#ifrit");
         (playerScore += ifritNumber);
@@ -50,15 +56,17 @@ $(document).ready(function() {
         console.log(playerScore);
 
         if (playerScore === compChoice) {
-        alert('You won!');
-        wins++
-    } else if (playerScore > compChoice) {
-        alert('You lost!');
-        losses++
-    }
+            alert('You won!');
+            wins++
+           
+        } else if (playerScore > compChoice) {
+            alert('You lost!');
+            losses++
+           
+        }
 
-    $('.wins').html(wins);
-    $('.losses').html(losses);
+        $('.wins').html(wins);
+        $('.losses').html(losses);
 
     });
 
@@ -70,15 +78,17 @@ $(document).ready(function() {
         console.log(playerScore);
 
         if (playerScore === compChoice) {
-        alert('You won!');
-        wins++
-    } else if (playerScore > compChoice) {
-        alert('You lost!');
-        losses++
-    }
+            alert('You won!');
+            wins++
+           
+        } else if (playerScore > compChoice) {
+            alert('You lost!');
+            losses++
+            
+        }
 
-    $('.wins').html(wins);
-    $('.losses').html(losses);
+        $('.wins').html(wins);
+        $('.losses').html(losses);
 
     });
 
@@ -90,15 +100,17 @@ $(document).ready(function() {
         console.log(playerScore);
 
         if (playerScore === compChoice) {
-        alert('You won!');
-        wins++
-    } else if (playerScore > compChoice) {
-        alert('You lost!');
-        losses++
-    }
+            alert('You won!');
+            wins++
+           
+        } else if (playerScore > compChoice) {
+            alert('You lost!');
+            losses++
+            
+        }
 
-    $('.wins').html(wins);
-    $('.losses').html(losses);
+        $('.wins').html(wins);
+        $('.losses').html(losses);
     });
 
 
@@ -106,8 +118,8 @@ $(document).ready(function() {
     $('.wins').html(wins);
     $('.losses').html(losses);
 
-    
 
-    
+
+
 
 });
